@@ -3,6 +3,13 @@ Revision History
 
 
 
+v1.0.3 (2018-10-22)
+------------------------
+
+* Add style for flash message using utf-8 icon.
+
+
+
 v1.0.2 (2018-10-05)
 ------------------------
 
