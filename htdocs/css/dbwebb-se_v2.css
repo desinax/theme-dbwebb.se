@@ -1,5 +1,5 @@
 /*!
- * Stylesheet to look-a-like dbwebb for the course design.
+ * Stylesheet to be the next version of the stylesheet for dbwebb.se.
  *
  * This stylesheet is a look-a-like the dbwebb.se stylesheet and it is
  * special for the design course. The style is used to show off various
@@ -8,7 +8,7 @@
 /**
  * Normalize and reset the style.
  */
-/*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
 /**
@@ -28,6 +28,12 @@ html {
  */
 body {
   margin: 0;
+}
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
 }
 /**
  * Correct the font size and margin on `h1` elements within `section` and
@@ -311,7 +317,7 @@ template {
  * Font Awesome.
  */
 /*!
- * Font Awesome Free 5.4.2 by @fontawesome - https://fontawesome.com
+ * Font Awesome Free 5.5.0 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
 .fa,
@@ -1171,11 +1177,26 @@ template {
 .fa-cloud-download-alt:before {
   content: "\f381";
 }
+.fa-cloud-meatball:before {
+  content: "\f73b";
+}
 .fa-cloud-moon:before {
   content: "\f6c3";
 }
+.fa-cloud-moon-rain:before {
+  content: "\f73c";
+}
+.fa-cloud-rain:before {
+  content: "\f73d";
+}
+.fa-cloud-showers-heavy:before {
+  content: "\f740";
+}
 .fa-cloud-sun:before {
   content: "\f6c4";
+}
+.fa-cloud-sun-rain:before {
+  content: "\f743";
 }
 .fa-cloud-upload-alt:before {
   content: "\f382";
@@ -1377,6 +1398,9 @@ template {
 }
 .fa-delicious:before {
   content: "\f1a5";
+}
+.fa-democrat:before {
+  content: "\f747";
 }
 .fa-deploydog:before {
   content: "\f38e";
@@ -1785,6 +1809,9 @@ template {
 }
 .fa-flag-checkered:before {
   content: "\f11e";
+}
+.fa-flag-usa:before {
+  content: "\f74d";
 }
 .fa-flask:before {
   content: "\f0c3";
@@ -2629,6 +2656,9 @@ template {
 .fa-mercury:before {
   content: "\f223";
 }
+.fa-meteor:before {
+  content: "\f753";
+}
 .fa-microchip:before {
   content: "\f2db";
 }
@@ -2905,6 +2935,9 @@ template {
 .fa-periscope:before {
   content: "\f3da";
 }
+.fa-person-booth:before {
+  content: "\f756";
+}
 .fa-phabricator:before {
   content: "\f3db";
 }
@@ -3001,6 +3034,9 @@ template {
 .fa-poo:before {
   content: "\f2fe";
 }
+.fa-poo-storm:before {
+  content: "\f75a";
+}
 .fa-poop:before {
   content: "\f619";
 }
@@ -3082,6 +3118,9 @@ template {
 .fa-r-project:before {
   content: "\f4f7";
 }
+.fa-rainbow:before {
+  content: "\f75b";
+}
 .fa-random:before {
   content: "\f074";
 }
@@ -3090,6 +3129,9 @@ template {
 }
 .fa-react:before {
   content: "\f41b";
+}
+.fa-reacteurope:before {
+  content: "\f75d";
 }
 .fa-readme:before {
   content: "\f4d5";
@@ -3135,6 +3177,9 @@ template {
 }
 .fa-replyd:before {
   content: "\f3e6";
+}
+.fa-republican:before {
+  content: "\f75e";
 }
 .fa-researchgate:before {
   content: "\f4f8";
@@ -3378,6 +3423,9 @@ template {
 }
 .fa-smile-wink:before {
   content: "\f4da";
+}
+.fa-smog:before {
+  content: "\f75f";
 }
 .fa-smoking:before {
   content: "\f48d";
@@ -3663,6 +3711,12 @@ template {
 }
 .fa-telegram-plane:before {
   content: "\f3fe";
+}
+.fa-temperature-high:before {
+  content: "\f769";
+}
+.fa-temperature-low:before {
+  content: "\f76b";
 }
 .fa-tencent-weibo:before {
   content: "\f1d5";
@@ -4054,6 +4108,9 @@ template {
 .fa-volume-up:before {
   content: "\f028";
 }
+.fa-vote-yea:before {
+  content: "\f772";
+}
 .fa-vr-cardboard:before {
   content: "\f729";
 }
@@ -4068,6 +4125,9 @@ template {
 }
 .fa-warehouse:before {
   content: "\f494";
+}
+.fa-water:before {
+  content: "\f773";
 }
 .fa-weebly:before {
   content: "\f5cc";
@@ -4227,7 +4287,7 @@ template {
   width: auto;
 }
 /*!
- * Font Awesome Free 5.4.2 by @fontawesome - https://fontawesome.com
+ * Font Awesome Free 5.5.0 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
 @font-face {
@@ -4243,7 +4303,7 @@ template {
   font-weight: 900;
 }
 /*!
- * Font Awesome Free 5.4.2 by @fontawesome - https://fontawesome.com
+ * Font Awesome Free 5.5.0 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
 @font-face {
@@ -4538,113 +4598,6 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
   color: #666;
 }
 /**
- * Figure and figcaption mixins, namespace #desinax-figure. You must enable
- * the style you want and add layout.
- */
-/**
- * Figure with ASCIINEMA
- */
-/** --------------------------------------------------------------
- * Figure through .figure
- */
-/**
- * Figure with Codepen
- */
-figure.figure,
-figure.asciinema,
-figure.codepen,
-figure.figure-codepen {
-  display: table;
-  padding: 0;
-  margin: 0;
-  /* Chrome shinks images in td */
-  /* Position the images */
-  margin-bottom: 20px;
-}
-figure.figure img {
-  max-width: 100%;
-  display: block;
-}
-figure.figure figcaption {
-  display: table-caption;
-  caption-side: bottom;
-}
-figure.figure figcaption p {
-  margin-top: 0;
-  font-style: italic;
-}
-figure.figure td img {
-  max-width: none;
-}
-figure.figure.left {
-  float: left;
-  margin-right: 8px;
-}
-figure.figure.right {
-  float: right;
-  margin-left: 8px;
-}
-figure.figure.center {
-  clear: both;
-  margin: auto;
-}
-figure.figure.center figcaption {
-  text-align: center;
-}
-@media screen and (max-width: 600px) {
-  figure.figure.w50 {
-    width: 300px;
-  }
-  figure.figure.w25 {
-    width: 150px;
-  }
-}
-@media screen and (max-width: 550px) {
-  figure.figure.w50 {
-    width: 225px;
-  }
-}
-@media screen and (max-width: 450px) {
-  figure.figure.w50 {
-    width: 200px;
-  }
-}
-@media screen and (max-width: 400px) {
-  figure.figure.w50 {
-    width: 150px;
-  }
-}
-@media screen and (max-width: 320px) {
-  figure.figure.w50 {
-    min-width: 100%;
-  }
-  figure.figure.left,
-  figure.figure.right {
-    float: none;
-    margin-left: 0;
-    margin-right: 0;
-  }
-}
-figure.figure figcaption {
-  padding-top: 12px;
-}
-figure.asciinema {
-  display: block;
-}
-figure.asciinema figcaption {
-  display: block;
-}
-figure.asciinema .asciicast {
-  margin: 0 !important;
-}
-figure.codepen,
-figure.figure-codepen {
-  width: 100%;
-}
-img.responsive {
-  max-width: 100%;
-}
-/**
  * Vertical grid
  */
 /**
@@ -4677,7 +4630,7 @@ img.responsive {
      */
 }
 html.vgrid .inner-wrap {
-  background: url("../img/theme/grid950x24x30x10-nomargin.png") repeat-y fixed center center;
+  background: url("../img/theme/grid_24x30x10-nomargin.png") repeat-y scroll center center;
   background-size: 100% auto;
 }
 @media (min-width: 1100px) {
@@ -4685,12 +4638,14 @@ html.vgrid .inner-wrap {
     background-size: 1100px auto;
   }
 }
-html.vgrid .inner-wrap.inner-wrap-header {
-  background: url("../img/theme/grid950x24x30x10-nomargin.png") repeat-y fixed center center;
+html.vgrid .inner-wrap.inner-wrap-header,
+html.vgrid .inner-wrap.inner-wrap-footer {
+  background: url("../img/theme/grid_24x30x10-nomargin.png") repeat-y scroll center center;
   background-size: 100% auto;
 }
 @media (min-width: 100%) {
-  html.vgrid .inner-wrap.inner-wrap-header {
+  html.vgrid .inner-wrap.inner-wrap-header,
+  html.vgrid .inner-wrap.inner-wrap-footer {
     background-size: 100% auto;
   }
 }
@@ -4698,77 +4653,17 @@ html.vgrid .inner-wrap.inner-wrap-header {
  * Typographic grid in namespace #desinax-hgrid.
  */
 /**
- * Import the parts making up the typographic grid.
- */
-/**
  * Typographic font families to choose from.
- */
-/**
- * Default font-families
- */
-/**
- * Typographic sizes for horisontal rythm.
- */
-/**
- * Magic number for vertical rythm
- * @magicNumber = @fontSizeBody * @lineHeight
- */
-/* 16px - 100%/1.5 */
-/**
- * Size and lineheight calculation for magicNumber 24
- *
- * 3em     * 16px   = 48 => line-height: 48    = 1
- * 2.875em * 16px   = 46 => line-height: 48/44 = 1.0435
- * 2.75em  * 16px   = 44 => line-height: 48/44 = 1.0909
- * 2.625em * 16px   = 42 => line-height: 48/42 = 1.1429
- * 2.5em   * 16px   = 40 => line-height: 48/40 = 1.2
- * 2.375em * 16px   = 38 => line-height: 48/38 = 1.2632
- * 2.25em  * 16px   = 36 => line-height: 48/36 = 1.3333
- * 2.125em * 16px   = 34 => line-height: 48/34 = 1.4118
- * 2em     * 16px   = 32 => line-height: 48/32 = 1.5
- * 1.875em * 16px   = 30 => line-height: 48/30 = 1.6
- * 1.75em  * 16px   = 28 => line-height: 48/28 = 1.7143
- * 1.625em * 16px   = 26 => line-height: 48/26 = 1.8462
- * 1.5em   * 16px   = 24 => line-height: 24    = 1
- * 1.375em * 16px   = 22 => line-height: 24/22 = 1.0909
- * 1.25em  * 16px   = 20 => line-height: 24/20 = 1.2
- * 1.125em * 16px   = 18 => line-height: 24/18 = 1.3333
- * 1em     * 16px   = 16 => line-height: 24/16 = 1.5
- * 0.875em * 16px   = 14 => line-height: 24/14 = 1.7143
- * 0.75em  * 16px   = 12 => line-height: 24/12 = 2
- */
-/**
- * Size and lineheight calculation for magicNumber 22
- *
- * 3em     * 16px   = 48 => line-height: 66/48 = 1.375
- * 2.875em * 16px   = 46 => line-height: 66/46 = 1.4348
- * 2.75em  * 16px   = 44 => line-height: 44    = 1
- * 2.625em * 16px   = 42 => line-height: 44/42 = 1.0476
- * 2.5em   * 16px   = 40 => line-height: 44/40 = 1.1
- * 2.375em * 16px   = 38 => line-height: 44/38 = 1.1579
- * 2.25em  * 16px   = 36 => line-height: 44/36 = 1.2222
- * 2.125em * 16px   = 34 => line-height: 44/34 = 1.2941
- * 2em     * 16px   = 32 => line-height: 44/32 = 1.375
- * 1.875em * 16px   = 30 => line-height: 44/30 = 1.4667
- * 1.75em  * 16px   = 28 => line-height: 44/28 = 1.5714
- * 1.625em * 16px   = 26 => line-height: 44/26 = 1.6923
- * 1.5em   * 16px   = 24 => line-height: 44/24 = 1.8333
- * 1.375em * 16px   = 22 => line-height: 22    = 1
- * 1.25em  * 16px   = 20 => line-height: 22/20 = 1.1
- * 1.125em * 16px   = 18 => line-height: 22/18 = 1.2222
- * 1em     * 16px   = 16 => line-height: 22/16 = 1.375
- * 0.875em * 16px   = 14 => line-height: 22/14 = 1.5714
- * 0.75em  * 16px   = 12 => line-height: 22/12 = 1.8333
-*/
-/**
- * Typographic mixins.
  */
 /**
  * Typographic defaults.
  */
 #desinax-hgrid {
   /**
-     * Headings
+     * Mixins used when setting default fonts
+     */
+  /**
+     * Settings for headings H1-H6
      */
   /**
      * Text elements
@@ -4790,28 +4685,140 @@ html.vgrid .inner-wrap.inner-wrap-header {
      * Enable all default typographic elements.
      */
 }
-/**
- * Activate default settings for fonts.
- */
-/*
-.inner-wrap-main {
-    //background-image: url(/img/grid/horisontal-grid-22.png);
-    //background-image: url(/img/grid/horisontal-grid-24.png);
-}
-
-body {
-    #hgrid .font();
-}
-
-.typographyHeadings();
-.typographyTextElements();
-.typographyCodeElements();
-.typographyListElements();
-.typographyTableElements();
-.typographyOtherElements();
-*/
 html.hgrid .inner-wrap {
-  background-image: url("../img/theme/magic-number-24.png");
+  background-image: repeating-linear-gradient(to bottom, transparent 0px, transparent 23px, #f4e3d7 23px, #f4e3d7 24px);
+}
+/**
+ * Figure and figcaption mixins, namespace #desinax-figure. You must enable
+ * the style you want and add layout.
+ */
+/**
+ * Figure with ASCIINEMA
+ */
+/** --------------------------------------------------------------
+ * Figure through .figure
+ */
+/**
+ * Figure with Codepen
+ */
+figure.figure,
+figure.asciinema,
+figure.figure-codepen,
+figure.codepen {
+  display: table;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 24px;
+  /* Chrome shinks images in td */
+  /* Position the images */
+}
+figure.figure img {
+  max-width: 100%;
+  display: block;
+}
+figure.figure figcaption {
+  display: table-caption;
+  caption-side: bottom;
+  padding-top: 12px;
+}
+figure.figure figcaption p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-style: italic;
+}
+figure.figure td img {
+  max-width: none;
+}
+figure.figure.center {
+  clear: both;
+  margin: auto;
+}
+figure.figure.center figcaption {
+  text-align: center;
+}
+figure.figure.left {
+  float: left;
+  margin-right: 0.5em;
+}
+figure.figure.right {
+  float: right;
+  margin-left: 0.5em;
+}
+@media screen and (max-width: 963px) {
+  figure.figure.left.w67,
+  figure.figure.right.w67 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w67 img,
+  figure.figure.right.w67 img {
+    width: 962.5px;
+  }
+}
+@media screen and (max-width: 733px) {
+  figure.figure.left.w50,
+  figure.figure.right.w50 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w50 img,
+  figure.figure.right.w50 img {
+    width: 733.33333333px;
+  }
+}
+@media screen and (max-width: 688px) {
+  figure.figure.left.w40,
+  figure.figure.right.w40 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w40 img,
+  figure.figure.right.w40 img {
+    width: 687.5px;
+  }
+}
+@media screen and (max-width: 550px) {
+  figure.figure.left.w33,
+  figure.figure.right.w33 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w33 img,
+  figure.figure.right.w33 img {
+    width: 550px;
+  }
+}
+@media screen and (max-width: 367px) {
+  figure.figure.left.w25,
+  figure.figure.right.w25 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w25 img,
+  figure.figure.right.w25 img {
+    width: 366.66666667px;
+  }
+}
+figure.asciinema {
+  display: block;
+}
+figure.asciinema figcaption {
+  display: block;
+}
+figure.asciinema .asciicast {
+  margin: 0 !important;
+}
+figure.figure-codepen,
+figure.codepen {
+  width: 100%;
+}
+img.responsive {
+  max-width: 100%;
 }
 /**
  * Links and navigation
@@ -5188,7 +5195,7 @@ body {
   padding: 0;
   color: #111;
   background-color: #fff;
-  font: 100.01%/1.5 Verdana, Geneva, sans-serif;
+  font: 16px/1.5 Verdana, Geneva, sans-serif;
 }
 h1,
 h2,
@@ -5230,7 +5237,6 @@ h2 {
   font-size: 1.875em;
   line-height: 1.6;
   font-weight: normal;
-  margin-top: 48px;
   margin-bottom: 23px;
   border-bottom: 1px solid #ccc;
 }
@@ -5238,28 +5244,41 @@ h2 + h3 {
   margin-top: 24px;
 }
 h3 {
-  font-size: 1.375em;
-  line-height: 1.09090909;
+  font-size: 1.75em;
+  line-height: 1.71428571;
   font-weight: normal;
-  margin-top: 48px;
   margin-bottom: 23px;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #eee;
+}
+h3 + h4 {
+  margin-top: 24px;
 }
 h4 {
-  font-size: 1.25em;
-  line-height: 1.2;
+  font-size: 1.5em;
+  line-height: 1;
   font-weight: normal;
+  margin-bottom: 23px;
+  border-bottom: 1px solid #eee;
+}
+h4 + h5 {
+  margin-top: 24px;
 }
 h5 {
-  font-size: 1em;
-  line-height: 1.5;
+  font-size: 1.25em;
+  line-height: 1.2;
+  margin-bottom: 23px;
+  border-bottom: 1px solid #EEE;
+}
+h5 + h6 {
+  margin-top: 24px;
 }
 h6 {
-  font-size: 0.875em;
-  line-height: 1.71428571;
+  font-size: 1.25em;
+  line-height: 1.2;
+  margin-bottom: 23px;
+  border-bottom: 1px solid #EEE;
 }
 p {
-  margin-top: 24px;
   margin-bottom: 24px;
 }
 small,
@@ -5308,12 +5327,13 @@ code,
 kbd,
 samp,
 .code {
-  font-size: 1.25em;
-  font-family: monospace;
+  font-family: "Courier New", Courier, monospace;
 }
 code,
 samp {
   border: 1px solid #ccc;
+  padding-left: 1px;
+  padding-right: 1px;
 }
 code {
   background-color: #eee;
@@ -5321,12 +5341,11 @@ code {
 pre,
 div.code,
 pre code {
-  font-size: 1.25em;
-  line-height: 1.6;
+  font-size: 1em;
+  line-height: 1.5;
   white-space: pre;
 }
 pre {
-  margin-top: 24px;
   margin-bottom: 24px;
 }
 pre code {
@@ -5337,7 +5356,6 @@ div.code,
 pre code {
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
-  margin-top: 23px;
   margin-bottom: 23px;
   padding-top: 12px;
   padding-bottom: 12px;
@@ -5346,7 +5364,6 @@ pre code {
 }
 ul,
 ol {
-  margin-top: 24px;
   margin-bottom: 24px;
   padding-left: 1.5em;
 }
@@ -5368,7 +5385,6 @@ ol {
   list-style-type: decimal;
 }
 dl {
-  margin-top: 24px;
   margin-bottom: 24px;
 }
 dl.horizontal dt {
@@ -5387,7 +5403,6 @@ article table,
 .table,
 .table1,
 .table2 {
-  margin-top: 24px;
   margin-bottom: 24px;
 }
 table.full-width,
@@ -5711,7 +5726,6 @@ a.rm-button.rm-clicked .rm-button-face-2 {
   display: block;
 }
 .rm-max .rm-small .rm-button {
-  font-size: 2em;
   color: inherit;
 }
 .rm-max .rm-small .rm-button.rm-clicked {
@@ -6304,6 +6318,22 @@ a.rm-button.rm-clicked .rm-button-face-2 {
   text-shadow: 0px 0px 1px #9FB129;
   text-decoration: underline;
 }
+.article .block h4 a,
+.sidebar .block h4 a,
+.columns-above .block h4 a,
+.columns-below .block h4 a {
+  display: block;
+  text-decoration: none;
+  transition: all 0.6s linear;
+}
+.article .block h4 a:hover,
+.sidebar .block h4 a:hover,
+.columns-above .block h4 a:hover,
+.columns-below .block h4 a:hover {
+  color: #3B440D;
+  text-shadow: 0px 0px 1px #9FB129;
+  text-decoration: underline;
+}
 /** ==============================================================
  * The footer column area.
  *
@@ -6364,7 +6394,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 .site-footer a {
   color: inherit;
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 770px) {
   .footer-column-wrapper,
   .footer-column-x {
     padding-right: 0;
@@ -6436,6 +6466,550 @@ a.rm-button.rm-clicked .rm-button-face-2 {
   background-color: #b5dce1;
   border: 1px solid #6cbac4;
   color: #111;
+}
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+/** ==============================================================
+ * Horisontal grid setup 
+ */
+.inner-wrap {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1100px;
+}
+.inner-wrap.inner-wrap-header {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 100%;
+}
+.row {
+  display: block;
+  width: 101.04166667%;
+  margin-left: -0.52083333%;
+  margin-right: -0.52083333%;
+}
+.row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/** ==============================================================
+ * Header 
+ */
+/*
+.site-header {
+
+}*/
+.logo-1 {
+  top: 55px;
+  left: 0;
+}
+.site-logo-text {
+  font-family: "Times New Roman", Times, serif;
+}
+.profile {
+  text-align: right;
+}
+.profile .profile-phpbb {
+  font-size: 2em;
+  line-height: 0;
+  position: absolute;
+  top: 21px;
+  right: 60px;
+}
+.profile .ucp a,
+.profile .login a {
+  color: #3B440D;
+}
+.profile .ucp a:hover,
+.profile .login a:hover {
+  color: #9FB129;
+}
+.profile .ucp .icon,
+.profile .login .icon {
+  position: relative;
+  top: -12px;
+}
+.profile .gravatar img {
+  border-radius: 50%;
+  vertical-align: -8px;
+}
+.profile .gravatar a:hover img {
+  opacity: 0.7;
+}
+.profile .logout {
+  display: none;
+}
+.profile .login .text {
+  display: none;
+}
+/** --------------------------------------------------------------
+ * Navbar(s)
+ */
+/*
+.navbar1 {
+    #desinax-vgrid.column(@columns);
+}
+
+.navbar2 {
+
+}
+*/
+/** --------------------------------------------------------------
+ * Breadcrumb
+ */
+.breadcrumb-wrap {
+  display: inline;
+  float: left;
+  width: 98.95833333%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
+}
+/** --------------------------------------------------------------
+ * Flash area
+ */
+.flash-wrap {
+  display: inline;
+  float: left;
+  width: 98.95833333%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
+}
+/** --------------------------------------------------------------
+* Columns above and below main
+*/
+/** --------------------------------------------------------------
+ * General column elements.
+ */
+.col2 {
+  display: inline;
+  float: left;
+  width: 48.95833333%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
+}
+.col3 {
+  display: inline;
+  float: left;
+  width: 32.29166667%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
+}
+.col4 {
+  display: inline;
+  float: left;
+  width: 23.95833333%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
+}
+#desinax-vgrid.column {
+  height: 100%;
+}
+.columns::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/** ==============================================================
+ * The main content area.
+ *
+ */
+/*
+.outer-wrap-main {
+
+}
+
+.inner-wrap-main {
+
+}*/
+.main {
+  display: inline;
+  float: left;
+  width: 65.625%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
+  margin-left: 8.85416667%;
+}
+.main.has-sidebar-left {
+  display: inline;
+  float: left;
+  width: 65.625%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
+  margin-left: 4.6875%;
+}
+.main.has-sidebar-right {
+  display: inline;
+  float: left;
+  width: 65.625%;
+  margin-right: 0.52083333%;
+  margin-left: 0.52083333%;
+}
+.main.has-sidebar-left.has-sidebar-right {
+  display: inline;
+  float: left;
+  width: 57.29166667%;
+  margin-right: 0.52083333%;
+  margin-left: 0.52083333%;
+}
+.sidebar-right,
+.sidebar-left {
+  display: inline;
+  float: left;
+  width: 28.125%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
+}
+.sidebar-right {
+  margin-left: 4.6875%;
+}
+@media screen and (max-width: 650px) {
+  .main {
+    min-height: initial;
+    display: inline;
+    float: left;
+    width: 98.95833333%;
+    margin-right: 0.52083333%;
+    margin-left: 0.52083333%;
+  }
+  .main.has-sidebar-left {
+    display: inline;
+    float: left;
+    width: 98.95833333%;
+    margin-right: 0.52083333%;
+    margin-left: 0.52083333%;
+  }
+  .main.has-sidebar-right {
+    display: inline;
+    float: left;
+    width: 98.95833333%;
+    margin-right: 0.52083333%;
+    margin-left: 0.52083333%;
+  }
+  .main.has-sidebar-left.has-sidebar-right {
+    display: inline;
+    float: left;
+    width: 98.95833333%;
+    margin-right: 0.52083333%;
+    margin-left: 0.52083333%;
+  }
+  .sidebar-right,
+  .sidebar-left {
+    display: none;
+  }
+  .col3 {
+    display: inline;
+    float: left;
+    width: 98.95833333%;
+    margin-left: 0.52083333%;
+    margin-right: 0.52083333%;
+  }
+  .col4 {
+    display: inline;
+    float: left;
+    width: 48.95833333%;
+    margin-left: 0.52083333%;
+    margin-right: 0.52083333%;
+  }
+}
+/** ==============================================================
+ * The footer area.
+ *
+ */
+.site-footer {
+  display: inline;
+  float: left;
+  width: 98.95833333%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
+}
+/** --------------------------------------------------------------
+ * The footer column area.
+ */
+.footer-column-wrapper::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.footer-column {
+  display: inline;
+  float: left;
+  width: 32.29166667%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
+}
+.footer-column,
+.footer-column-x {
+  height: 100%;
+}
+/** --------------------------------------------------------------
+ * Make your own custom style.
+ *
+ */
+/** ==============================================================
+ * Base
+ */
+/** ==============================================================
+ * Header 
+ */
+/**
+ * A header style for dbwebb.se.
+ */
+.outer-wrap-header {
+  height: 48px;
+  margin-bottom: 12px;
+}
+.outer-wrap-header img {
+  outline: 0;
+}
+.inner-wrap-header {
+  max-width: none;
+}
+.inner-wrap-header .row {
+  max-width: 100%;
+}
+.inner-wrap-header {
+  position: relative;
+}
+.logo-1 {
+  position: absolute;
+}
+.site-logo-text {
+  display: inline;
+  float: left;
+  width: 19.79166667%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
+}
+.navbar2 {
+  display: inline;
+  float: left;
+  width: 57.29166667%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
+}
+.profile {
+  display: inline;
+  float: left;
+  width: 19.79166667%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
+}
+@media screen and (max-width: 1300px) {
+  .navbar2 {
+    display: inline;
+    float: left;
+    width: 69.79166667%;
+    margin-left: 0.52083333%;
+    margin-right: 0.52083333%;
+  }
+  .profile {
+    display: inline;
+    float: left;
+    width: 7.29166667%;
+    margin-left: 0.52083333%;
+    margin-right: 0.52083333%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .site-logo-text {
+    display: inline;
+    float: left;
+    width: 23.95833333%;
+    margin-left: 0.52083333%;
+    margin-right: 0.52083333%;
+  }
+  .navbar2 {
+    display: inline;
+    float: left;
+    width: 65.625%;
+    margin-left: 0.52083333%;
+    margin-right: 0.52083333%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .site-logo-text {
+    display: inline;
+    float: left;
+    width: 65.625%;
+    margin-left: 0.52083333%;
+    margin-right: 0.52083333%;
+  }
+  .navbar2 {
+    display: none;
+  }
+  .profile {
+    display: inline;
+    float: left;
+    width: 32.29166667%;
+    margin-left: 0.52083333%;
+    margin-right: 0.52083333%;
+  }
+}
+/** --------------------------------------------------------------
+* Logo and logo text (PERHAPS MOVE TO OWN MODULE/LAYOUT FILE)
+*/
+.site-logo-text {
+  font-size: 42px;
+  line-height: 1;
+  text-shadow: 2px -2px 2px #ccc;
+  padding-left: 8px;
+}
+.site-logo-text a {
+  color: #333;
+  text-decoration: none;
+  transition: all 0.2s linear;
+}
+.site-logo-text a:hover {
+  color: #3B440D;
+  text-shadow: 2px -2px 2px #9FB129;
+}
+.site-logo-text-icon img {
+  vertical-align: bottom;
+}
+@media screen and (min-width: 1360px) {
+  .site-logo-text-icon img {
+    display: none;
+  }
+}
+@media screen and (max-width: 1360px) {
+  .site-logo-text-icon img {
+    display: inline;
+  }
+  .logo-1 {
+    display: none;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .outer-wrap,
+  .inner-wrap-footer {
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+  .outer-wrap-flash,
+  .outer-wrap-footer {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .outer-wrap-flash .row {
+    max-width: 100%;
+  }
+  .footer {
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+}
+.outer-wrap-after-main {
+  margin-top: -48px;
+}
+/** ==============================================================
+ * Column above and below
+ *
+ */
+.inner-wrap-columns-above {
+  margin-bottom: 24px;
+}
+/** ==============================================================
+ * Main
+ *
+ */
+.inner-wrap-main {
+  padding-bottom: 48px;
+}
+/** ==============================================================
+ * Article and Sidebar blocks
+ *
+ */
+.article {
+  margin-bottom: 72px;
+}
+.article .block,
+.sidebar .block,
+.columns-above .block,
+.columns-below .block {
+  margin-bottom: 48px;
+}
+.article .block h4,
+.sidebar .block h4,
+.columns-above .block h4,
+.columns-below .block h4 {
+  border-top: 1px solid #ccc;
+  background-color: #eee;
+  background-color: #ccc;
+  background-image: -moz-linear-gradient(left, #fff, #ccc);
+  background-image: -webkit-gradient(linear, 0 0, 100% 0, from(#fff), to(#ccc));
+  background-image: -webkit-linear-gradient(left, #fff, #ccc);
+  background-image: -o-linear-gradient(left, #fff, #ccc);
+  background-image: linear-gradient(to right, #fff, #ccc);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffcccccc', GradientType=1);
+}
+.article .block h4 a,
+.sidebar .block h4 a,
+.columns-above .block h4 a,
+.columns-below .block h4 a {
+  color: inherit;
+  text-decoration: none;
+}
+.article .block h4 a:hover,
+.sidebar .block h4 a:hover,
+.columns-above .block h4 a:hover,
+.columns-below .block h4 a:hover {
+  color: #33f;
+  text-decoration: underline;
+}
+.article .block h4 a,
+.sidebar .block h4 a,
+.columns-above .block h4 a,
+.columns-below .block h4 a {
+  display: block;
+  text-decoration: none;
+  transition: all 0.6s linear;
+}
+.article .block h4 a:hover,
+.sidebar .block h4 a:hover,
+.columns-above .block h4 a:hover,
+.columns-below .block h4 a:hover {
+  color: #3B440D;
+  text-shadow: 0px 0px 1px #9FB129;
+  text-decoration: underline;
+}
+.article .block h4 a,
+.sidebar .block h4 a,
+.columns-above .block h4 a,
+.columns-below .block h4 a {
+  display: block;
+  text-decoration: none;
+  transition: all 0.6s linear;
+}
+.article .block h4 a:hover,
+.sidebar .block h4 a:hover,
+.columns-above .block h4 a:hover,
+.columns-below .block h4 a:hover {
+  color: #3B440D;
+  text-shadow: 0px 0px 1px #9FB129;
+  text-decoration: underline;
+}
+/** ==============================================================
+ * The footer column area.
+ *
+ */
+/** ==============================================================
+ * Route specific style.
+ */
+.route- .outer-wrap-flash {
+  margin-bottom: 24px;
+}
+.route- .article {
+  margin-bottom: 0;
+}
+.route-kurser .outer-wrap-main,
+.route-material .outer-wrap-main,
+.route-utbildning .outer-wrap-main,
+.route-community .outer-wrap-main {
+  display: none;
 }
 .site-logo {
   position: absolute;
