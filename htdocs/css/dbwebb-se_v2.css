@@ -5809,6 +5809,9 @@ a.rm-button.rm-clicked .rm-button-face-2 {
     display: none;
   }
 }
+.rm-max .rm-mobile .rm-submenu-button {
+  padding: 1em;
+}
 .rm-max.rm-navbar {
   top: 6px;
 }
@@ -5957,6 +5960,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 .inner-wrap-main {
 
 }*/
+.main,
 .region-main {
   display: inline;
   float: left;
@@ -5965,6 +5969,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
   margin-right: 0.52083333%;
   margin-left: 8.85416667%;
 }
+.main.has-sidebar-left,
 .region-main.has-sidebar-left {
   display: inline;
   float: left;
@@ -5973,6 +5978,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
   margin-right: 0.52083333%;
   margin-left: 4.6875%;
 }
+.main.has-sidebar-right,
 .region-main.has-sidebar-right {
   display: inline;
   float: left;
@@ -5980,6 +5986,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
   margin-right: 0.52083333%;
   margin-left: 0.52083333%;
 }
+.main.has-sidebar-left.has-sidebar-right,
 .region-main.has-sidebar-left.has-sidebar-right {
   display: inline;
   float: left;
@@ -5987,6 +5994,8 @@ a.rm-button.rm-clicked .rm-button-face-2 {
   margin-right: 0.52083333%;
   margin-left: 0.52083333%;
 }
+.sidebar-right,
+.sidebar-left,
 .region-sidebar-right,
 .region-sidebar-left {
   display: inline;
@@ -5995,6 +6004,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
 }
+.sidebar-right,
 .region-sidebar-right {
   margin-left: 4.6875%;
 }
@@ -6007,6 +6017,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
   margin-left: 0.52083333%;
 }
 @media screen and (max-width: 650px) {
+  .main,
   .region-main {
     min-height: initial;
     display: inline;
@@ -6015,6 +6026,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
     margin-right: 0.52083333%;
     margin-left: 0.52083333%;
   }
+  .main.has-sidebar-left,
   .region-main.has-sidebar-left {
     display: inline;
     float: left;
@@ -6022,6 +6034,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
     margin-right: 0.52083333%;
     margin-left: 0.52083333%;
   }
+  .main.has-sidebar-right,
   .region-main.has-sidebar-right {
     display: inline;
     float: left;
@@ -6029,6 +6042,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
     margin-right: 0.52083333%;
     margin-left: 0.52083333%;
   }
+  .main.has-sidebar-left.has-sidebar-right,
   .region-main.has-sidebar-left.has-sidebar-right {
     display: inline;
     float: left;
@@ -6036,9 +6050,15 @@ a.rm-button.rm-clicked .rm-button-face-2 {
     margin-right: 0.52083333%;
     margin-left: 0.52083333%;
   }
+  .sidebar-right,
+  .sidebar-left,
   .region-sidebar-right,
   .region-sidebar-left {
-    display: none;
+    display: inline;
+    float: left;
+    width: 98.95833333%;
+    margin-right: 0.52083333%;
+    margin-left: 0.52083333%;
   }
   .col3 {
     display: inline;
@@ -6118,6 +6138,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 .inner-wrap-header .row {
   max-width: 100%;
 }
+.site-logo-text,
 .region-header-col-1 {
   display: inline;
   float: left;
@@ -6125,6 +6146,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
 }
+.navbar2,
 .region-header-col-2 {
   display: inline;
   float: left;
@@ -6132,6 +6154,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
 }
+.profile,
 .region-header-col-3 {
   display: inline;
   float: left;
@@ -6140,6 +6163,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
   margin-right: 0.52083333%;
 }
 @media screen and (max-width: 1300px) {
+  .navbar2,
   .region-header-col-2 {
     display: inline;
     float: left;
@@ -6147,6 +6171,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
     margin-left: 0.52083333%;
     margin-right: 0.52083333%;
   }
+  .profile,
   .region-header-col-3 {
     display: inline;
     float: left;
@@ -6156,6 +6181,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
   }
 }
 @media screen and (max-width: 1000px) {
+  .site-logo-text,
   .region-header-col-1 {
     display: inline;
     float: left;
@@ -6163,6 +6189,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
     margin-left: 0.52083333%;
     margin-right: 0.52083333%;
   }
+  .navbar2,
   .region-header-col-2 {
     display: inline;
     float: left;
@@ -6172,6 +6199,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
   }
 }
 @media screen and (max-width: 800px) {
+  .site-logo-text,
   .region-header-col-1 {
     display: inline;
     float: left;
@@ -6179,9 +6207,11 @@ a.rm-button.rm-clicked .rm-button-face-2 {
     margin-left: 0.52083333%;
     margin-right: 0.52083333%;
   }
+  .navbar2,
   .region-header-col-2 {
     display: none;
   }
+  .profile,
   .region-header-col-3 {
     display: inline;
     float: left;
@@ -6211,15 +6241,34 @@ a.rm-button.rm-clicked .rm-button-face-2 {
   vertical-align: bottom;
   display: none;
 }
-@media screen and (max-width: 1700px) {
+.logo-1 {
+  position: absolute;
+  top: 30px;
+  left: 10px;
+}
+@media screen and (max-width: 1750px) {
+  .logo-1,
+  .site-logo img {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 1550px) {
+  .logo-1,
   .site-logo img {
     width: 150px;
   }
 }
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1400px) {
+  .logo-1,
+  .site-logo img {
+    width: 100px;
+  }
+}
+@media screen and (max-width: 1350px) {
   .site-logo-text-icon img {
     display: inline;
   }
+  .logo-1,
   .site-logo {
     display: none;
   }
@@ -6300,22 +6349,6 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 .columns-above .block h4 a:hover,
 .columns-below .block h4 a:hover {
   color: #33f;
-  text-decoration: underline;
-}
-.article .block h4 a,
-.sidebar .block h4 a,
-.columns-above .block h4 a,
-.columns-below .block h4 a {
-  display: block;
-  text-decoration: none;
-  transition: all 0.6s linear;
-}
-.article .block h4 a:hover,
-.sidebar .block h4 a:hover,
-.columns-above .block h4 a:hover,
-.columns-below .block h4 a:hover {
-  color: #3B440D;
-  text-shadow: 0px 0px 1px #9FB129;
   text-decoration: underline;
 }
 .article .block h4 a,
@@ -6466,550 +6499,6 @@ a.rm-button.rm-clicked .rm-button-face-2 {
   background-color: #b5dce1;
   border: 1px solid #6cbac4;
   color: #111;
-}
-/**
- * Layout style for general structure of header, navbar, main, footer
- * and other regions of the page including route specific styles.
- */
-/** ==============================================================
- * Horisontal grid setup 
- */
-.inner-wrap {
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 1100px;
-}
-.inner-wrap.inner-wrap-header {
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 100%;
-}
-.row {
-  display: block;
-  width: 101.04166667%;
-  margin-left: -0.52083333%;
-  margin-right: -0.52083333%;
-}
-.row::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-/** ==============================================================
- * Header 
- */
-/*
-.site-header {
-
-}*/
-.logo-1 {
-  top: 55px;
-  left: 0;
-}
-.site-logo-text {
-  font-family: "Times New Roman", Times, serif;
-}
-.profile {
-  text-align: right;
-}
-.profile .profile-phpbb {
-  font-size: 2em;
-  line-height: 0;
-  position: absolute;
-  top: 21px;
-  right: 60px;
-}
-.profile .ucp a,
-.profile .login a {
-  color: #3B440D;
-}
-.profile .ucp a:hover,
-.profile .login a:hover {
-  color: #9FB129;
-}
-.profile .ucp .icon,
-.profile .login .icon {
-  position: relative;
-  top: -12px;
-}
-.profile .gravatar img {
-  border-radius: 50%;
-  vertical-align: -8px;
-}
-.profile .gravatar a:hover img {
-  opacity: 0.7;
-}
-.profile .logout {
-  display: none;
-}
-.profile .login .text {
-  display: none;
-}
-/** --------------------------------------------------------------
- * Navbar(s)
- */
-/*
-.navbar1 {
-    #desinax-vgrid.column(@columns);
-}
-
-.navbar2 {
-
-}
-*/
-/** --------------------------------------------------------------
- * Breadcrumb
- */
-.breadcrumb-wrap {
-  display: inline;
-  float: left;
-  width: 98.95833333%;
-  margin-left: 0.52083333%;
-  margin-right: 0.52083333%;
-}
-/** --------------------------------------------------------------
- * Flash area
- */
-.flash-wrap {
-  display: inline;
-  float: left;
-  width: 98.95833333%;
-  margin-left: 0.52083333%;
-  margin-right: 0.52083333%;
-}
-/** --------------------------------------------------------------
-* Columns above and below main
-*/
-/** --------------------------------------------------------------
- * General column elements.
- */
-.col2 {
-  display: inline;
-  float: left;
-  width: 48.95833333%;
-  margin-left: 0.52083333%;
-  margin-right: 0.52083333%;
-}
-.col3 {
-  display: inline;
-  float: left;
-  width: 32.29166667%;
-  margin-left: 0.52083333%;
-  margin-right: 0.52083333%;
-}
-.col4 {
-  display: inline;
-  float: left;
-  width: 23.95833333%;
-  margin-left: 0.52083333%;
-  margin-right: 0.52083333%;
-}
-#desinax-vgrid.column {
-  height: 100%;
-}
-.columns::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-/** ==============================================================
- * The main content area.
- *
- */
-/*
-.outer-wrap-main {
-
-}
-
-.inner-wrap-main {
-
-}*/
-.main {
-  display: inline;
-  float: left;
-  width: 65.625%;
-  margin-left: 0.52083333%;
-  margin-right: 0.52083333%;
-  margin-left: 8.85416667%;
-}
-.main.has-sidebar-left {
-  display: inline;
-  float: left;
-  width: 65.625%;
-  margin-left: 0.52083333%;
-  margin-right: 0.52083333%;
-  margin-left: 4.6875%;
-}
-.main.has-sidebar-right {
-  display: inline;
-  float: left;
-  width: 65.625%;
-  margin-right: 0.52083333%;
-  margin-left: 0.52083333%;
-}
-.main.has-sidebar-left.has-sidebar-right {
-  display: inline;
-  float: left;
-  width: 57.29166667%;
-  margin-right: 0.52083333%;
-  margin-left: 0.52083333%;
-}
-.sidebar-right,
-.sidebar-left {
-  display: inline;
-  float: left;
-  width: 28.125%;
-  margin-left: 0.52083333%;
-  margin-right: 0.52083333%;
-}
-.sidebar-right {
-  margin-left: 4.6875%;
-}
-@media screen and (max-width: 650px) {
-  .main {
-    min-height: initial;
-    display: inline;
-    float: left;
-    width: 98.95833333%;
-    margin-right: 0.52083333%;
-    margin-left: 0.52083333%;
-  }
-  .main.has-sidebar-left {
-    display: inline;
-    float: left;
-    width: 98.95833333%;
-    margin-right: 0.52083333%;
-    margin-left: 0.52083333%;
-  }
-  .main.has-sidebar-right {
-    display: inline;
-    float: left;
-    width: 98.95833333%;
-    margin-right: 0.52083333%;
-    margin-left: 0.52083333%;
-  }
-  .main.has-sidebar-left.has-sidebar-right {
-    display: inline;
-    float: left;
-    width: 98.95833333%;
-    margin-right: 0.52083333%;
-    margin-left: 0.52083333%;
-  }
-  .sidebar-right,
-  .sidebar-left {
-    display: none;
-  }
-  .col3 {
-    display: inline;
-    float: left;
-    width: 98.95833333%;
-    margin-left: 0.52083333%;
-    margin-right: 0.52083333%;
-  }
-  .col4 {
-    display: inline;
-    float: left;
-    width: 48.95833333%;
-    margin-left: 0.52083333%;
-    margin-right: 0.52083333%;
-  }
-}
-/** ==============================================================
- * The footer area.
- *
- */
-.site-footer {
-  display: inline;
-  float: left;
-  width: 98.95833333%;
-  margin-left: 0.52083333%;
-  margin-right: 0.52083333%;
-}
-/** --------------------------------------------------------------
- * The footer column area.
- */
-.footer-column-wrapper::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-.footer-column {
-  display: inline;
-  float: left;
-  width: 32.29166667%;
-  margin-left: 0.52083333%;
-  margin-right: 0.52083333%;
-}
-.footer-column,
-.footer-column-x {
-  height: 100%;
-}
-/** --------------------------------------------------------------
- * Make your own custom style.
- *
- */
-/** ==============================================================
- * Base
- */
-/** ==============================================================
- * Header 
- */
-/**
- * A header style for dbwebb.se.
- */
-.outer-wrap-header {
-  height: 48px;
-  margin-bottom: 12px;
-}
-.outer-wrap-header img {
-  outline: 0;
-}
-.inner-wrap-header {
-  max-width: none;
-}
-.inner-wrap-header .row {
-  max-width: 100%;
-}
-.inner-wrap-header {
-  position: relative;
-}
-.logo-1 {
-  position: absolute;
-}
-.site-logo-text {
-  display: inline;
-  float: left;
-  width: 19.79166667%;
-  margin-left: 0.52083333%;
-  margin-right: 0.52083333%;
-}
-.navbar2 {
-  display: inline;
-  float: left;
-  width: 57.29166667%;
-  margin-left: 0.52083333%;
-  margin-right: 0.52083333%;
-}
-.profile {
-  display: inline;
-  float: left;
-  width: 19.79166667%;
-  margin-left: 0.52083333%;
-  margin-right: 0.52083333%;
-}
-@media screen and (max-width: 1300px) {
-  .navbar2 {
-    display: inline;
-    float: left;
-    width: 69.79166667%;
-    margin-left: 0.52083333%;
-    margin-right: 0.52083333%;
-  }
-  .profile {
-    display: inline;
-    float: left;
-    width: 7.29166667%;
-    margin-left: 0.52083333%;
-    margin-right: 0.52083333%;
-  }
-}
-@media screen and (max-width: 1000px) {
-  .site-logo-text {
-    display: inline;
-    float: left;
-    width: 23.95833333%;
-    margin-left: 0.52083333%;
-    margin-right: 0.52083333%;
-  }
-  .navbar2 {
-    display: inline;
-    float: left;
-    width: 65.625%;
-    margin-left: 0.52083333%;
-    margin-right: 0.52083333%;
-  }
-}
-@media screen and (max-width: 800px) {
-  .site-logo-text {
-    display: inline;
-    float: left;
-    width: 65.625%;
-    margin-left: 0.52083333%;
-    margin-right: 0.52083333%;
-  }
-  .navbar2 {
-    display: none;
-  }
-  .profile {
-    display: inline;
-    float: left;
-    width: 32.29166667%;
-    margin-left: 0.52083333%;
-    margin-right: 0.52083333%;
-  }
-}
-/** --------------------------------------------------------------
-* Logo and logo text (PERHAPS MOVE TO OWN MODULE/LAYOUT FILE)
-*/
-.site-logo-text {
-  font-size: 42px;
-  line-height: 1;
-  text-shadow: 2px -2px 2px #ccc;
-  padding-left: 8px;
-}
-.site-logo-text a {
-  color: #333;
-  text-decoration: none;
-  transition: all 0.2s linear;
-}
-.site-logo-text a:hover {
-  color: #3B440D;
-  text-shadow: 2px -2px 2px #9FB129;
-}
-.site-logo-text-icon img {
-  vertical-align: bottom;
-}
-@media screen and (min-width: 1360px) {
-  .site-logo-text-icon img {
-    display: none;
-  }
-}
-@media screen and (max-width: 1360px) {
-  .site-logo-text-icon img {
-    display: inline;
-  }
-  .logo-1 {
-    display: none;
-  }
-}
-@media screen and (max-width: 1100px) {
-  .outer-wrap,
-  .inner-wrap-footer {
-    margin-left: 4px;
-    margin-right: 4px;
-  }
-  .outer-wrap-flash,
-  .outer-wrap-footer {
-    margin-left: 0;
-    margin-right: 0;
-  }
-  .outer-wrap-flash .row {
-    max-width: 100%;
-  }
-  .footer {
-    padding-left: 4px;
-    padding-right: 4px;
-  }
-}
-.outer-wrap-after-main {
-  margin-top: -48px;
-}
-/** ==============================================================
- * Column above and below
- *
- */
-.inner-wrap-columns-above {
-  margin-bottom: 24px;
-}
-/** ==============================================================
- * Main
- *
- */
-.inner-wrap-main {
-  padding-bottom: 48px;
-}
-/** ==============================================================
- * Article and Sidebar blocks
- *
- */
-.article {
-  margin-bottom: 72px;
-}
-.article .block,
-.sidebar .block,
-.columns-above .block,
-.columns-below .block {
-  margin-bottom: 48px;
-}
-.article .block h4,
-.sidebar .block h4,
-.columns-above .block h4,
-.columns-below .block h4 {
-  border-top: 1px solid #ccc;
-  background-color: #eee;
-  background-color: #ccc;
-  background-image: -moz-linear-gradient(left, #fff, #ccc);
-  background-image: -webkit-gradient(linear, 0 0, 100% 0, from(#fff), to(#ccc));
-  background-image: -webkit-linear-gradient(left, #fff, #ccc);
-  background-image: -o-linear-gradient(left, #fff, #ccc);
-  background-image: linear-gradient(to right, #fff, #ccc);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffcccccc', GradientType=1);
-}
-.article .block h4 a,
-.sidebar .block h4 a,
-.columns-above .block h4 a,
-.columns-below .block h4 a {
-  color: inherit;
-  text-decoration: none;
-}
-.article .block h4 a:hover,
-.sidebar .block h4 a:hover,
-.columns-above .block h4 a:hover,
-.columns-below .block h4 a:hover {
-  color: #33f;
-  text-decoration: underline;
-}
-.article .block h4 a,
-.sidebar .block h4 a,
-.columns-above .block h4 a,
-.columns-below .block h4 a {
-  display: block;
-  text-decoration: none;
-  transition: all 0.6s linear;
-}
-.article .block h4 a:hover,
-.sidebar .block h4 a:hover,
-.columns-above .block h4 a:hover,
-.columns-below .block h4 a:hover {
-  color: #3B440D;
-  text-shadow: 0px 0px 1px #9FB129;
-  text-decoration: underline;
-}
-.article .block h4 a,
-.sidebar .block h4 a,
-.columns-above .block h4 a,
-.columns-below .block h4 a {
-  display: block;
-  text-decoration: none;
-  transition: all 0.6s linear;
-}
-.article .block h4 a:hover,
-.sidebar .block h4 a:hover,
-.columns-above .block h4 a:hover,
-.columns-below .block h4 a:hover {
-  color: #3B440D;
-  text-shadow: 0px 0px 1px #9FB129;
-  text-decoration: underline;
-}
-/** ==============================================================
- * The footer column area.
- *
- */
-/** ==============================================================
- * Route specific style.
- */
-.route- .outer-wrap-flash {
-  margin-bottom: 24px;
-}
-.route- .article {
-  margin-bottom: 0;
-}
-.route-kurser .outer-wrap-main,
-.route-material .outer-wrap-main,
-.route-utbildning .outer-wrap-main,
-.route-community .outer-wrap-main {
-  display: none;
 }
 .site-logo {
   position: absolute;
